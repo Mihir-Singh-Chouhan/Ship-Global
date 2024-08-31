@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <div class="div" style="text-align: center;"><h1><b>CAROUSEL</b></h1></div>
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="https://i.pinimg.com/564x/b4/e2/67/b4e2672fa1242c51bfabb7763b2da594.jpg" alt="Image 1" onerror="this.onerror=null; this.src='fallback.jpg';">
+            <img src="https://i.pinimg.com/564x/d8/37/ed/d837ede10baa3dc302ed793c0e4f0890.jpg" alt="Image 2" onerror="this.onerror=null; this.src='fallback.jpg';">
+            <img src="https://i.pinimg.com/564x/aa/39/73/aa3973b3c971a422398c78c339e0e2ce.jpg" alt="Image 3" onerror="this.onerror=null; this.src='fallback.jpg';">
+        </div>
+        <button class="carousel-control prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="carousel-control next" onclick="moveSlide(1)">&#10095;</button>
+        <div class="indicators">
+            <span class="indicator" onclick="currentSlide(1)"></span>
+            <span class="indicator" onclick="currentSlide(2)"></span>
+            <span class="indicator" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    <p>Submitted by Mihir</p>
+    <script src="script.js"></script>
+</body>
+</html>

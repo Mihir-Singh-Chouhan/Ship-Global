@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="backlog" style="background-color: rgba(240, 17, 17, 0.705);">
+            <h2>Backlog</h2>
+            <ul id="backlogList">
+                <li>Dancing <button class="nav-button right" onclick="moveTask('backlog', 'todo', this)">→</button></li>
+                <li>Singing <button class="nav-button right" onclick="moveTask('backlog', 'todo', this)">→</button></li>
+                <li>Running <button class="nav-button right" onclick="moveTask('backlog', 'todo', this)">→</button></li>
+            </ul>
+        </div>
+        <div class="card" id="todo" style="background-color: rgb(188, 92, 177);">
+            <h2>To Do</h2>
+            <ul id="todoList">
+                <li>Swimming <button class="nav-button left" onclick="moveTask('todo', 'backlog', this)">←</button><button class="nav-button right" onclick="moveTask('todo', 'ongoing', this)">→</button></li>
+                <li>Cricket <button class="nav-button left" onclick="moveTask('todo', 'backlog', this)">←</button><button class="nav-button right" onclick="moveTask('todo', 'ongoing', this)">→</button></li>
+                <li>Cycling <button class="nav-button left" onclick="moveTask('todo', 'backlog', this)">←</button><button class="nav-button right" onclick="moveTask('todo', 'ongoing', this)">→</button></li>
+            </ul>
+        </div>
+        <div class="card" id="ongoing" style="background-color: rgb(235, 121, 15);">
+            <h2>Ongoing</h2>
+            <ul id="ongoingList">
+                <li>Study <button class="nav-button left" onclick="moveTask('ongoing', 'todo', this)">←</button><button class="nav-button right" onclick="moveTask('ongoing', 'done', this)">→</button></li>
+                <li>Lunch <button class="nav-button left" onclick="moveTask('ongoing', 'todo', this)">←</button><button class="nav-button right" onclick="moveTask('ongoing', 'done', this)">→</button></li>
+            </ul>
+        </div>
+        <div class="card" id="done" style="background-color: rgb(41, 134, 103);">
+            <h2>Done</h2>
+            <ul id="doneList">
+                <li>Home Work <button class="nav-button left" onclick="moveTask('done', 'ongoing', this)">←</button></li>
+                <li>Done <button class="nav-button left" onclick="moveTask('done', 'ongoing', this)">←</button></li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

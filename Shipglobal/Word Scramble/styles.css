@@ -1,0 +1,95 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #00796b;
+}
+
+.scrambled-word {
+    font-size: 32px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    color: #d32f2f;
+}
+
+.hint {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.timer {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #1976d2;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#refreshButton {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+#checkButton {
+    background-color: #5bc0de;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.message {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #d32f2f;
+}
+
+.div
+{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
